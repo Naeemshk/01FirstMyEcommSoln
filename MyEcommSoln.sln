@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEcommShop.WebUI", "MyEcom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEcommShop.WebUI.Tests", "MyEcommShop.WebUI.Tests\MyEcommShop.WebUI.Tests.csproj", "{38F36D9A-2400-437A-80ED-4845E050B6D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEcommShop.Core", "MyEcommShop.Core\MyEcommShop.Core.csproj", "{3245887C-2828-479B-B305-1603A0205915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEcommShop.DataAccess.InMemory", "MyEcommShop.DataAccess.InMemory\MyEcommShop.DataAccess.InMemory.csproj", "{A00564FF-06C1-411B-B86A-F84D89F3D41A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{38F36D9A-2400-437A-80ED-4845E050B6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38F36D9A-2400-437A-80ED-4845E050B6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38F36D9A-2400-437A-80ED-4845E050B6D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3245887C-2828-479B-B305-1603A0205915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3245887C-2828-479B-B305-1603A0205915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3245887C-2828-479B-B305-1603A0205915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3245887C-2828-479B-B305-1603A0205915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00564FF-06C1-411B-B86A-F84D89F3D41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00564FF-06C1-411B-B86A-F84D89F3D41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00564FF-06C1-411B-B86A-F84D89F3D41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00564FF-06C1-411B-B86A-F84D89F3D41A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
