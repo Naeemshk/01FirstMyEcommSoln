@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyEcommShop.Core.Models
 {
-    public class ProductCatagory
+    public class ProductCatagory :CommonClassBaseEntries
     {
-        public string Id { get; set; }
+       // public string Id { get; set; }        now inherited from CommonClassBaseEntries
         public string Catagory { get; set; }
         public ProductCatagory()
         {
-            this.Id = Guid.NewGuid().ToString();
+            this.ID = Guid.NewGuid().ToString();
         }
     }
    

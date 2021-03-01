@@ -70,7 +70,7 @@ namespace MyEcommShop.WebUI.Controllers
                 }
                 else
                 {
-                    productCatagToEdit.Id = MyProdCatagory.Id;
+                    productCatagToEdit.ID = MyProdCatagory.ID;
                     productCatagToEdit.Catagory = MyProdCatagory.Catagory;
                     MyProdCatagoryRep.Commit();
                     return RedirectToAction("Index");

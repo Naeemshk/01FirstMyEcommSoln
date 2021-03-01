@@ -32,7 +32,7 @@ namespace MyEcommShop.DataAccess.InMemory
 
         public void Update(ProductCatagory  productcatagory)
         {
-            ProductCatagory productCatagToUpdate = MyProductCatagory.Find(p => p.Id == productcatagory.Id );
+            ProductCatagory productCatagToUpdate = MyProductCatagory.Find(p => p.ID == productcatagory.ID );
 
             if (productCatagToUpdate != null)
             {
@@ -44,9 +44,9 @@ namespace MyEcommShop.DataAccess.InMemory
             }
         }
 
-        public ProductCatagory Find(string Id)
+        public ProductCatagory Find(string ID)
         {
-            ProductCatagory  productcatag = MyProductCatagory.Find(p => p.Id == Id);
+            ProductCatagory  productcatag = MyProductCatagory.Find(p => p.ID == ID);
 
             if (productcatag != null)
             {
@@ -64,9 +64,9 @@ namespace MyEcommShop.DataAccess.InMemory
             return MyProductCatagory.AsQueryable();
         }
 
-        public void Delete(string Id)
+        public void Delete(string ID)
         {
-            ProductCatagory  productcatagToDelete = MyProductCatagory.Find(p => p.Id == Id);
+            ProductCatagory  productcatagToDelete = MyProductCatagory.Find(p => p.ID == ID);
 
             if (productcatagToDelete != null)
             {
