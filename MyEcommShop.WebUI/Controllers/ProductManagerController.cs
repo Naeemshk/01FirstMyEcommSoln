@@ -12,12 +12,18 @@ namespace MyEcommShop.WebUI.Controllers
 {
     public class ProductManagerController : Controller
     {
-        ProductRepository MyProdRep;
-        ProductCatagoryRepository ProdCatagRepositry;
+        //ProductRepository MyProdRep;
+        //ProductCatagoryRepository ProdCatagRepositry;
+        InMemoryRepository<Product> MyProdRep;
+        InMemoryRepository<ProductCatagory> ProdCatagRepositry;
+
         public ProductManagerController()
         {
-            MyProdRep = new ProductRepository();
-            ProdCatagRepositry = new ProductCatagoryRepository();
+            //MyProdRep = new ProductRepository();
+           // ProdCatagRepositry = new ProductCatagoryRepository();
+            MyProdRep = new InMemoryRepository<Product>();
+            ProdCatagRepositry = new InMemoryRepository<ProductCatagory>();
+
         }
         // GET: ProductManager
         public ActionResult Index()

@@ -7,17 +7,18 @@ using MyEcommShop.Core.Models;
 using MyEcommShop.DataAccess.InMemory;
 
 
+
 namespace MyEcommShop.WebUI.Controllers
 {
     public class ProductCatagoryManagerController : Controller
     {
-        ProductCatagoryRepository MyProdCatagoryRep; //old Product Catagory Repository
+        //ProductCatagoryRepository MyProdCatagoryRep; //old Product Catagory Repository
         // Now replace with InMeemoryrepository with any Object Type parameter
-        //InMemoryRepository<ProductCatagory> MyProdCatagoryRep;
+        InMemoryRepository<ProductCatagory> MyProdCatagoryRep;
         public ProductCatagoryManagerController()
         {
-            MyProdCatagoryRep = new ProductCatagoryRepository();
-           //MyProdCatagoryRep = new InMemoryRepository<ProductCatagory>();
+           // MyProdCatagoryRep = new ProductCatagoryRepository();
+           MyProdCatagoryRep = new InMemoryRepository<ProductCatagory>();
         }
         // GET: ProductManager
         public ActionResult Index()
