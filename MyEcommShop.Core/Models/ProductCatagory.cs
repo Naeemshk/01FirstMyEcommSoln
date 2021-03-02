@@ -8,7 +8,7 @@ namespace MyEcommShop.Core.Models
 {
     public class ProductCatagory :CommonClassBaseEntries
     {
-       // public string Id { get; set; }        now inherited from CommonClassBaseEntries
+       // public string ID { get; set; }    //    now inherited from CommonClassBaseEntries
         public string Catagory { get; set; }
         public ProductCatagory()
         {

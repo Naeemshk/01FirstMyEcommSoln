@@ -9,7 +9,7 @@ namespace MyEcommShop.Core.Models
 {
     public class Product : CommonClassBaseEntries
     {
-        //public string ID { get; set; } now inherited from CommonClassBaseEntries
+       // public string ID { get; set; } //now inherited from CommonClassBaseEntries
         [StringLength(20)]
         [Display(Name="Product Name")]
         public String Name { get; set; }

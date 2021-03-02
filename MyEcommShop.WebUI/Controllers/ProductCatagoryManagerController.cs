@@ -11,14 +11,18 @@ namespace MyEcommShop.WebUI.Controllers
 {
     public class ProductCatagoryManagerController : Controller
     {
-        ProductCatagoryRepository MyProdCatagoryRep;
+        ProductCatagoryRepository MyProdCatagoryRep; //old Product Catagory Repository
+        // Now replace with InMeemoryrepository with any Object Type parameter
+        //InMemoryRepository<ProductCatagory> MyProdCatagoryRep;
         public ProductCatagoryManagerController()
         {
             MyProdCatagoryRep = new ProductCatagoryRepository();
+           //MyProdCatagoryRep = new InMemoryRepository<ProductCatagory>();
         }
         // GET: ProductManager
         public ActionResult Index()
         {
+            //List<ProductCatagory> MyProductCatagory = MyProdCatagoryRep.Collection().ToList();
             List<ProductCatagory> MyProductCatagory = MyProdCatagoryRep.Collection().ToList();
             return View(MyProductCatagory);
         }
